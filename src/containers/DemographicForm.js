@@ -304,7 +304,7 @@ const DemographicForm = () => {
               South African, and good or bad person.
               <br />
               <strong>BENEFITS</strong> <br />The first 10 completed surveys each day can be compensated R100. To
-              qualify, send your contact email to saresearch25@gmail.com. We hope that
+              qualify, send your contact email to saresearch25@gmail.com. The researcher hopes that
               the information obtained from this study may give all insight into
               attitudes amongst different immigrant groups.
               <br />
