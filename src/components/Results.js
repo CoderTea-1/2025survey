@@ -29,27 +29,36 @@ const getResultStatement = (bias, test) => {
   switch (bias) {
     case BIAS.NONE:
       return (
-        <p className="result-headline">
-          Thank you for responding! Please wait for confirmation that your data
-          has been saved before closing this tab.
-        </p>
+        <div>
+           <p className="result-headline">
+             Thank you for responding! Please wait for confirmation that your data
+             has been saved before closing this tab.
+           </p>
+           <button><a href="mailto:saresearch25@gmail.com"></a></button>
+         </div>
       );
     case BIAS.COMPATIBLE:
       return (
-        <h4 className="result-headline">
-          Thank you for responding! Please wait for confirmation that your data
-          has been saved before closing this tab.
-        </h4>
+        <div>
+           <p className="result-headline">
+             Thank you for responding! Please wait for confirmation that your data
+             has been saved before closing this tab.
+           </p>
+           <button><a href="mailto:saresearch25@gmail.com"></a></button>
+         </div>
       );
     case BIAS.INCOMPATIBLE:
       const targetsInIncompatibleOrder = targetsInCompatibleOrder
         .slice()
         .reverse();
       return (
-        <h4 className="result-headline">
-          Thank you for responding! Please wait for confirmation that your data
-          has been saved before closing this tab.
-        </h4>
+        <div>
+           <p className="result-headline">
+             Thank you for responding! Please wait for confirmation that your data
+             has been saved before closing this tab.
+           </p>
+           <button><a href="mailto:saresearch25@gmail.com"></a></button>
+         </div>
       );
     default:
       return "We were unable to calculate your results due to an unexpected error.";
