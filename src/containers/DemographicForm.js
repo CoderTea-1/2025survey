@@ -303,10 +303,10 @@ const DemographicForm = () => {
               questions (which were above), then will move on to questions where you will categorize certain words as either foreigner or
               South African, and good or bad person.
               <br />
-              <strong>BENEFITS</strong> <br />There is a possibility of being compensated R100. To
-              enter, you need email saresearch25@gmail.com with a picture of your results screen with the notification that results have been saved. The researcher will only compensate the first 10 emails received. We hope that
-              the information obtained from this study may give insight into
-              attitudes towards different immigrant groups.
+              <strong>BENEFITS</strong> <br />The first 10 completed surveys each day can be compensated R100. To
+              qualify, send your contact email to saresearch25@gmail.com. We hope that
+              the information obtained from this study may give all insight into
+              attitudes amongst different immigrant groups.
               <br />
               <strong>CONFIDENTIALITY</strong>
               <br /> Your responses to this survey will be anonymous. Every effort will be made by the researcher to preserve
