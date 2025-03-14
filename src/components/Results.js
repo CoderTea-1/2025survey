@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
-
 import { resetTest } from "../actions";
 import BIAS from "../constants/Bias";
 import { toTitleCase } from "../formatters";
-
+import "../scss/Results.scss"; // Optional, make sure you have the SCSS file
 const BIAS_THRESHOLD = 1000;
 
 const BACKEND_API_URL =
@@ -29,22 +28,22 @@ const getResultStatement = (bias, test) => {
   switch (bias) {
     case BIAS.NONE:
       return (
-        <div>
-           <p className="result-headline">
+        <div className="result-headline">
+           <p>
              Thank you for responding! Please wait for confirmation that your data
              has been saved before closing this tab.
            </p>
-           <button><a href="mailto:saresearch25@gmail.com"></a></button>
+           <button> <a href="mailto:saresearch25@gmail.com"  className="button25" target="_blank">Email to be compensated</a></button>
          </div>
       );
     case BIAS.COMPATIBLE:
       return (
-        <div>
-           <p className="result-headline">
+        <div className="result-headline">
+           <p>
              Thank you for responding! Please wait for confirmation that your data
              has been saved before closing this tab.
            </p>
-           <button><a href="mailto:saresearch25@gmail.com"></a></button>
+           <button> <a href="mailto:saresearch25@gmail.com"  className="button25" target="_blank">Email to be compensated</a></button>
          </div>
       );
     case BIAS.INCOMPATIBLE:
@@ -52,12 +51,13 @@ const getResultStatement = (bias, test) => {
         .slice()
         .reverse();
       return (
-        <div>
-           <p className="result-headline">
+        <div className="result-headline">
+           <p>
              Thank you for responding! Please wait for confirmation that your data
              has been saved before closing this tab.
            </p>
-           <button><a href="mailto:saresearch25@gmail.com"></a></button>
+           
+           <button> <a href="mailto:saresearch25@gmail.com"  className="button25" target="_blank">Email to be compensated</a></button>
          </div>
       );
     default:
@@ -121,10 +121,12 @@ class Results extends Component {
     const resultStatement = getResultStatement(bias, test);
     console.log("results on results.js ", results);
     return (
-      <div className="text-center">
-        <h2 >Results</h2>
-        {resultStatement}
-      </div>
+
+        <div className="text-center">
+          <h2 >Results</h2>
+          {resultStatement}
+        </div>
+      
     );
   }
 }
@@ -136,3 +138,4 @@ const mapDispatchToProps = (dispatch) => ({
 const VisibleResults = connect(() => ({}), mapDispatchToProps)(Results);
 
 export default VisibleResults;
+
