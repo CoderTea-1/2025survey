@@ -71,6 +71,11 @@ const DemographicForm = () => {
     <div className="lg:mx-60">
   <h4 className="center-align">Demographic Information</h4>
   <form onSubmit={handleSubmit}>
+  <div className="card">
+  <div className="card-content">
+          <p style={{ textAlign: "justify" }}>Hi! My name is Darmin Tarasewicz. I am a rising university student. The survey you are about to take is a project for my class.</p>
+        </div>
+      </div>
     {/* Gender */}
     <div className="card">
       <div className="card-content">
@@ -89,7 +94,7 @@ const DemographicForm = () => {
 
         {formData.gender === "other" && (
           <div className="input-field">
-            <label htmlFor="otherGender">Please specify:</label>
+            <p htmlFor="otherGender">Please specify:</p>
             <input
               type="text"
               id="otherGender"
@@ -174,31 +179,25 @@ const DemographicForm = () => {
           className="browser-default"
         >
           <option value="">Select...</option>
-          {[
-            "White South African",
-            "Black South African",
-            "Colored South African",
-            "Asian South African",
-            "Congolese",
-            "Kenyans",
-            "Mozambicans",
-            "Nigerians",
-            "Somalian",
-            "Zimbabwean",
-            "Indian",
-            "Bangladeshi",
-            "Italian",
-            "British",
-            "Other",
-          ].map((eth) => (
-            <option key={eth} value={eth}>
-              {eth}
-            </option>
-          ))}
+         <option value="white">White South African</option>
+            <option value="black">Black South African</option>
+           <option value="colored">Colored South African</option>
+           <option value="asiansa">Asian South African</option>
+           <option value="congolese">Congolese</option>
+           <option value="kenyan">Kenyan</option>
+           <option value="mozambican">Mozambican</option>
+           <option value="nigerian">Nigerian</option>
+           <option value="somalian">Somalian</option>
+           <option value="zimbabwean">Zimbabwean</option>
+           <option value="indian">Indian</option>
+           <option value="bangladeshi">Bangladeshi</option>
+           <option value="italian">Italian</option>
+           <option value="british">British</option>
+           <option value="other">Other</option>
         </select>
         {formData.ethnicity === "other" && (
           <div className="input-field">
-            <label htmlFor="otherEthnicity">Please specify:</label>
+            <p htmlFor="otherEthnicity">Please specify:</p>
             <input
               type="text"
               id="otherEthnicity"
@@ -222,36 +221,30 @@ const DemographicForm = () => {
           className="browser-default"
         >
           <option value="">Select...</option>
-          {[
-            "Did not vote",
-            "ACTIONSA",
-            "ACDP",
-            "ANC",
-            "ATM",
-            "ALJAMA",
-            "BOSA",
-            "DA",
-            "EFF",
-            "VF+",
-            "GOOD",
-            "IFP",
-            "CCC",
-            "PAC",
-            "PA",
-            "RISE",
-            "MK",
-            "UAT",
-            "UDM",
-            "Other",
-          ].map((party) => (
-            <option key={party} value={party}>
-              {party}
-            </option>
-          ))}
+          <option value="Did not vote">Did not vote</option>
+          <option value="ACTIONSA">ACTIONSA</option>
+          <option value="ACDP">ACDP</option>
+          <option value="ANC">ANC</option>
+          <option value="ATM">ATM</option>
+          <option value="ALJAMA">ALJAMA</option>
+          <option value="BOSA">BOSA</option>
+          <option value="DA">DA</option>
+          <option value="EFF">EFF</option>
+          <option value="VF+">VF+</option>
+          <option value="GOOD">GOOD</option>
+          <option value="IFP">IFP</option>
+          <option value="CCC">CCC</option>
+          <option value="PAC">PAC</option>
+          <option value="PA">PA</option>
+          <option value="RISE">RISE</option>
+          <option value="MK">MK</option>
+          <option value="UAT">UAT</option>
+          <option value="UDM">UDM</option>
+            <option value="other">Other</option>
         </select>
         {formData.politicalAffiliation === "other" && (
           <div className="input-field">
-            <label htmlFor="otherPoliticalAffiliation">Please specify:</label>
+            <p htmlFor="otherPoliticalAffiliation">Please specify:</p>
             <input
               type="text"
               id="otherPoliticalAffiliation"
@@ -281,14 +274,73 @@ const DemographicForm = () => {
       </div>
     </div>
 
-    {/* Consent Information */}
-    <div className="card">
+   {/* Consent Information */}
+   <div className="card">
       <div className="card-content">
         <p style={{ textAlign: "justify" }}>
-          {/* Consent details */}
-        </p>
-      </div>
-    </div>
+              <strong>PRINCIPAL INVESTIGATOR</strong>
+              <br /> Darmin Tarasewicz
+              <br /> Torrey Pines High School
+              <br /> 3710 Del Mar Heights Rd, San Diego, California, United
+              States 92130
+              <br /> +1 (619) 714 - 0293
+              <br /> saresearch25@gmail.com
+              <br />
+              <strong>PURPOSE OF STUDY</strong>
+              <br /> You are being asked to take part in a research study.
+              Before you decide to participate in this study, it is important
+              that you understand why the research is being done and what it
+              will involve. Please read the following information carefully.
+              Please ask the researcher if there is anything that is not clear
+              or if you need more information.
+              <br /> The purpose of this study is to investigate the differences
+              in attitude toward different immigrant groups in South Africa.
+              <br />
+              <strong>STUDY PROCEDURES</strong>
+              <br /> This study is optional and can be quit at any time. Any
+              data from incomplete surveys are not saved and will not be used in
+              the final paper. This study will ask optional demographic
+              questions (which were above), then will move on to questions where you will categorize certain words as either foreigner or
+              South African, and good or bad person.
+              <br />
+              <strong>BENEFITS</strong> <br />There is a possibility of being compensated R100. To
+              enter, you need email saresearch25@gmail.com with a picture of your results screen with the notification that results have been saved. The researcher will only compensate the first 10 emails received. We hope that
+              the information obtained from this study may give insight into
+              attitudes towards different immigrant groups.
+              <br />
+              <strong>CONFIDENTIALITY</strong>
+              <br /> Your responses to this survey will be anonymous. Every effort will be made by the researcher to preserve
+              your confidentiality, including the following:
+              <br />
+              No names will be asked for in this survey. The only information
+              tied to you are the above demographic questions. All responses are
+              also locked behind a secured google account and cannot be accessed
+              by anyone except the researcher.
+              <br />
+              <strong>CONTACT INFORMATION</strong>
+              <br /> If you have questions at any time about this study, or you
+              experience adverse effects as the result of participating in this
+              study, you may contact the researcher whose contact information is
+              provided above. If you have questions regarding your
+              rights as a research participant, or if problems arise which you
+              do not feel you can discuss with the Primary Investigator, please
+              contact Michael Montgomery at +1 (858) 755-0125, ext. 2137.
+              <br />
+              <strong>VOLUNTARY PARTICIPATION</strong>
+              <br /> Your participation in this study is voluntary. If you
+              decide to take part in this study, you will be asked to agree to
+              this consent form. After you agree to this consent form, you are
+              still free to withdraw at any time and without giving a reason. If you withdraw from the study before data collection is completed, your data will be destroyed.
+              <br />
+              <strong>CONSENT</strong>
+              <br /> I have read and I understand the provided information and
+              have had the opportunity to ask questions. I understand that my
+              participation is voluntary and that I am free to withdraw at any
+              time, without giving a reason and without cost. I voluntarily
+              agree to take part in this study.
+            </p>
+          </div>
+        </div>
 
     {/* Consent Checkboxes */}
     <div className="card">
