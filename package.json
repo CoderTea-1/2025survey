@@ -15,7 +15,8 @@
     "react-scripts": "^5.0.1",
     "redux": "^4.0.4",
     "redux-thunk": "^2.3.0",
-    "survey-react-ui": "^1.10.5"
+    "survey-react-ui": "^1.10.5",
+    "yocto-queue": "^1.2.0"
   },
   "scripts": {
     "predeploy": "npm run build",
