@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import "../scss/keyboard.scss";
 
 const App = () => {
   const hiddenInputRef = useRef(null);
@@ -11,7 +12,7 @@ const App = () => {
 
   return (
 
-    <div className="container sm:hidden">
+    <div className="container xl:hidden center">
       <button onClick={showKeyboard} className="btn ">
         Open Keyboard
       </button>
