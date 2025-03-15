@@ -93,6 +93,7 @@ export default function Instructions({
 
   <div className="row center">
     <h5>
+      <p className="container xl:hidden">Click "Open the Keyboard" and</p>
       <p>
         Press the{" "}
         <a className="btn disabled">
