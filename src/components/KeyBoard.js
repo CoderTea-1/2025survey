@@ -11,7 +11,7 @@ const App = () => {
 
   return (
 
-    <div className="container sm:hidden">
+    <div className="container lg:hidden center">
       <button onClick={showKeyboard} className="btn ">
         Open Keyboard
       </button>
