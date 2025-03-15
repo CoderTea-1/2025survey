@@ -12,7 +12,7 @@ const App = () => {
 
   return (
 
-    <div className="container sm:hidden center">
+    <div className="container xl:hidden">
       <button onClick={showKeyboard} className="btn ">
         Open Keyboard
       </button>
