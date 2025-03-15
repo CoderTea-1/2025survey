@@ -93,16 +93,13 @@ export default function Instructions({
 
   <div className="row center">
     <h5>
-      
       <p>
-      <p className="container xl:hidden">Click "Open the Keyboard" and</p>
         Press the{" "}
         <a className="btn disabled">
           <strong>{INPUT_KEYS.START_KEY}</strong>
         </a>{" "}
         when you are ready to start.
       </p>
-      
     </h5>
   </div>
 </div>
