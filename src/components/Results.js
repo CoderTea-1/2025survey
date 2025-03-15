@@ -33,7 +33,7 @@ const getResultStatement = (bias, test) => {
              Thank you for responding! Please wait for confirmation that your data
              has been saved before closing this tab.
            </p>
-           <button> <a href="mailto:saresearch25@gmail.com"  className="button25" target="_blank">Email to be compensated</a></button>
+           <button> <a href="mailto:saresearch25@gmail.com?&subject=Filled%out%survey&body=Good%20Morning,%0d%0dHow%20are%20you%20today?%The%best%way%to%send%the%money%is"  className="button25" target="_blank">Email to be compensated</a></button>
          </div>
       );
     case BIAS.COMPATIBLE:
@@ -43,7 +43,7 @@ const getResultStatement = (bias, test) => {
              Thank you for responding! Please wait for confirmation that your data
              has been saved before closing this tab.
            </p>
-           <button> <a href="mailto:saresearch25@gmail.com"  className="button25" target="_blank">Email to be compensated</a></button>
+           <button> <a href="mailto:saresearch25@gmail.com?&subject=Filled%out%survey&body=Good%20Morning,%0d%0dHow%20are%20you%20today?%The%best%way%to%send%the%money%is"  className="button25" target="_blank">Email to be compensated</a></button>
          </div>
       );
     case BIAS.INCOMPATIBLE:
@@ -57,7 +57,7 @@ const getResultStatement = (bias, test) => {
              has been saved before closing this tab.
            </p>
            
-           <button> <a href="mailto:saresearch25@gmail.com"  className="button25" target="_blank">Email to be compensated</a></button>
+           <button> <a href="mailto:saresearch25@gmail.com?&subject=Filled out survey&body=Good Morning,How%20are%20you%20today?%The%best%way%to%send%the%money%is"  className="button25" target="_blank">Email to be compensated</a></button>
          </div>
       );
     default:
