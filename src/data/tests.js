@@ -3,7 +3,7 @@
 const tests = [
   {
     id: "power-happiness",
-    name: "African test",
+    name: "US test",
     description: "",
     targetType: "nationality",
     categoryType: "type of person",
